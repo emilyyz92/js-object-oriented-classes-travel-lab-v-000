@@ -17,3 +17,10 @@ class Driver {
     return endDate - this.startDate.getFullYear() - 2;
   }
 }
+
+class Route {
+  constructor (horizontal, vertical) {
+    this.horizontal = horizontal
+    this.vertical = vertical
+  }
+}
