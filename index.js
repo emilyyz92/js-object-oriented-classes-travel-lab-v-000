@@ -4,7 +4,7 @@ const convertMonth = function (string) {
   const filterArray = months.filter(function (word) {
     array[0].slice(0, word.length) === word
   })
-  return filterArray[0];
+  return months.indexof(filterArray[0]);
 }
 
 class Driver {
