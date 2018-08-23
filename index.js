@@ -34,9 +34,9 @@ class Route {
 
   estimatedTime(rushHour = false) {
     if (rushHour) {
-      return this.blocksTravelled()/3;
+      return this.blocksTravelled()/2;
     } else {
-      return this.blocksTravelled
+      return this.blocksTravelled()/3;
     }
   }
 }
