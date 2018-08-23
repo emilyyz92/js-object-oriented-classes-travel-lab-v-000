@@ -2,7 +2,7 @@ const convertMonth = function (string) {
   const array = string.split(' ')
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
   const filterArray = months.filter(function (word) {
-    array[0] === string.slice(0, word.length)
+    array[0].slice(0, word.length) === word
   })
   return filterArray[0];
 }
