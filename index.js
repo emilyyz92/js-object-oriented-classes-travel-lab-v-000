@@ -10,7 +10,7 @@ const convertMonth = function (string) {
 class Driver {
   constructor (name, startDate) {
     this.name = name
-    this.startDate = convertMonth(startDate)
+    this.startDate = new Date(Date.UTC(startDate.split(' ')[-1], convertMonth(startDate)))
   }
 
   yearsExperienceFromBeginningOf (endDate) {
