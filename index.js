@@ -32,7 +32,8 @@ class Route {
     }
   }
 
-  estimatedTime() {
+  estimatedTime(rushHour = true) {
+    if (rushHour)
     return this.blocksTravelled()/3;
     debugger;
   }
