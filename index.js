@@ -19,8 +19,16 @@ class Driver {
 }
 
 class Route {
-  constructor (horizontal, vertical) {
-    this.horizontal = horizontal
-    this.vertical = vertical
+  constructor (beginningLocation, endingLocation) {
+    this.beginningLocation = beginningLocation
+    this.endingLocation = endingLocation
+  }
+
+  blocksTravelled() {
+    if (this.endingLocation.horizontal === this.beginningLocation.horizontal) {
+      return this.endingLocation.vertical - this.beginningLocation.vertical;
+    } else {
+      return this.endingLocation.vertical - this.beginningLocation.vertical + 4;
+    }
   }
 }
